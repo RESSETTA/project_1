@@ -4,8 +4,31 @@
 <script lang="javascript">
 <!--
 function calculate(){
-//rezult: calc.rez.value
-alert("function not realized")
+var a=Number(calc.num1.value);
+    var b = Number(calc.num2.value);
+    var data = document.getElementById("op");
+    var t1 = data.options[data.selectedIndex].value;
+if ((calc.num1=="") || (calc.num2=="") )
+{
+alert("uncerrect values");
+return;
+ }
+    //alert(t1);
+switch (t1) {
+    case "sum":
+        calc.rez.value = a + b;
+            break;
+    case "sub":
+        calc.rez.value = a - b;
+            break;
+    case "mul":
+        calc.rez.value = a * b;
+          break;
+    case "divide":
+        calc.rez.value = a / b;
+          break;
+    }
+    
 }
 //-->
 </script>
