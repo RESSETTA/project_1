@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Calculator Application</title>
+<link href="styles/style.css" type="text/css" rel="stylesheet">
+</head>
+<script lang="javascript">
+<!--
+function calculate(){
+//rezult: calc.rez.value
+alert("function not realized")
+}
+//-->
+</script>
+<body>
+<h1>Приможение калькулятор</h1><br>
+<form name="calc">
+<div id="expression">
+<input type="text" name="num1" size=2> + <input type="text" name="num2" size=2> = <input type="text" readonly id="rez" size="4">
+</div>
+<br>
+<select name="operations" id="op">
+<option value="sum">Сложить</option>
+<option value="sub">Вычесть</option>
+<option value="mul">Умножить</option>
+<option value="divide">разделить</option>
+</select>
+<input type="button" value="Get rezult" onclick="calculate()">    <input type="reset" value="Clear">
+</form><div id="selected"></div>
+<br>
+<a href="about.html">About program</a>
+</body>
+</html>
